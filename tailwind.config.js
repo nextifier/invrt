@@ -36,6 +36,9 @@ module.exports = {
         'primary-darken': '#C30000',
         gray: colors.zinc,
       },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      }
     },
   },
   plugins: [

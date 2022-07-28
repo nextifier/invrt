@@ -16,7 +16,7 @@
           </a>
 
           <div class="flex flex-col items-center gap-y-2">
-            <Logo class="text-white h-9" />
+            <Logo class="text-white h-8 lg:h-9" />
             <LogoFestival class="text-white h-2.5" />
           </div>
         </div>
@@ -30,19 +30,19 @@
               class="cursor-pointer"
             >
               <LogoNST
-                class="text-gray-300 hover:text-white transition-colors h-12"
+                class="text-gray-300 hover:text-white transition-colors h-10 lg:h-12"
               />
             </a>
 
             <a href="#" target="_blank" class="cursor-pointer">
               <LogoPOP
-                class="text-gray-300 hover:text-white transition-colors h-12"
+                class="text-gray-300 hover:text-white transition-colors h-10 lg:h-12"
               />
             </a>
 
             <a href="#" target="_blank" class="cursor-pointer">
               <LogoNVB
-                class="text-gray-300 hover:text-white transition-colors h-12"
+                class="text-gray-300 hover:text-white transition-colors h-10 lg:h-12"
               />
             </a>
           </div>

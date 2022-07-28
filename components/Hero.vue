@@ -57,7 +57,7 @@
           <div
             class="lg:col-span-4 xl:col-span-4 lg:h-[calc(100vh-5rem)] flex flex-row justify-between items-center lg:flex-col lg:items-end lg:justify-end py-16 px-4 lg:px-0 order-2 lg:order-3 z-10"
           >
-            <InvrtFestivalCircular class="h-24" />
+            <InvrtFestivalCircular class="h-24 animate-spin-slow" />
             <div
               class="flex flex-col gap-y-3 text-right items-end text-white lg:mt-24"
             >
