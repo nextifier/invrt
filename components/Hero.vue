@@ -37,7 +37,7 @@
                   >Get your ticket</nuxt-link
                 >
                 <nuxt-link
-                  to="/ticket"
+                  to="/artists"
                   class="bg-black/40 lg:backdrop-blur-lg hover:bg-gray-900/80 text-gray-300 lg:text-white transition-colors px-6 py-4 text-center"
                   v-wave
                   >See the artists</nuxt-link

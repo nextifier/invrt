@@ -70,7 +70,7 @@
 
         <button
           type="submit"
-          class="mt-4 p-6 flex justify-center items-center gap-x-2 bg-primary text-white font-extrabold rounded-lg hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 ring-white ring-offset-4 ring-offset-black"
+          class="mt-4 p-6 flex justify-center items-center gap-x-2 bg-primary text-white font-bold hover:bg-primary-darken transition-colors duration-300 focus:outline-none focus:ring-2 ring-white ring-offset-4 ring-offset-black"
         >
           <LoadingSpinner v-if="loading" />
           <span>Send message</span>
@@ -119,7 +119,7 @@ export default {
             email: this.form.email,
             phone: this.form.phone,
             message: this.form.message,
-            client: "Nusountara",
+            client: "INVRT",
             to: this.to,
             cc: this.cc,
             bcc: this.bcc,
@@ -166,11 +166,11 @@ export default {
 }
 
 .input-group > label {
-  @apply font-extrabold text-sm;
+  @apply font-bold text-sm;
 }
 
 .input-group > input,
 .input-group > textarea {
-  @apply bg-gray-800 rounded md:rounded-lg w-full py-2 px-4 focus:outline-none focus:ring-2 ring-blue-500 focus:ring-offset-4 ring-offset-black;
+  @apply bg-gray-800 w-full py-2 px-4 focus:outline-none focus:ring-2 ring-blue-500 focus:ring-offset-4 ring-offset-black;
 }
 </style>

@@ -46,9 +46,9 @@
           </nuxt-link>
 
           <nuxt-link
-            to="/floor-plan"
+            to="/floorplan"
             class="nav-link flex"
-            @click.native="$scrollToTopIfCurrentPageIs('floor-plan')"
+            @click.native="$scrollToTopIfCurrentPageIs('floorplan')"
             v-wave
           >
             <span>Floor Plan</span>
