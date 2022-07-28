@@ -19,7 +19,7 @@
           <img
             :src="require(`~/assets/img/artists/${artist.img}`)"
             :alt="artist.name"
-            class="aspect-[4/5] w-full bg-gray-900"
+            class="aspect-[4/5] w-full bg-gray-900 object-cover"
             loading="lazy"
           />
           <span class="text-white">{{ artist.name }}</span>
