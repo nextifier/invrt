@@ -1,72 +1,56 @@
 <template>
-  <footer class="pb-24 lg:pb-6">
-    <div class="container mx-auto px-4">
-      <div
-        class="grid grid-cols-2 md:grid-cols-12 gap-x-4 lg:gap-x-8 gap-y-16 py-24 md:py-32"
-      >
-        <div
-          class="col-span-2 md:col-span-6 lg:col-span-5 xl:col-span-5 2xl:col-span-4 flex flex-col items-start gap-y-3 md:gap-y-5 overflow-hidden"
-        >
-          <div class="flex items-center gap-x-2.5">
-            <a
-              :href="`https://www.instagram.com/${$store.state.instagram}`"
-              target="_blank"
-              class="p-[3px] rounded-full bg-gradient-to-tr from-[#FCB045] to-[#FD1D1D]"
+  <footer class="pt-24">
+    <div class="container">
+      <div class="flex flex-col items-center">
+        <div class="flex items-center gap-x-4">
+          <a
+            :href="`https://www.instagram.com/${$store.state.instagram}`"
+            target="_blank"
+            class="p-[3px] rounded-full bg-gradient-to-tr from-[#FCB045] to-[#FD1D1D]"
+          >
+            <div
+              class="bg-black w-16 h-16 rounded-full flex items-center justify-center border-4 border-black"
             >
-              <div
-                class="bg-gray-900 w-16 h-16 rounded-full flex items-center justify-center border-4 border-black"
-              >
-                <Logo class="h-7 text-white" />
-              </div>
+              <Logo class="h-2.5 text-white" />
+            </div>
+          </a>
+
+          <div class="flex flex-col items-center gap-y-2">
+            <Logo class="text-white h-9" />
+            <LogoFestival class="text-white h-2.5" />
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center mt-10">
+          <span class="text-sm">A collaboration between</span>
+          <div class="flex gap-x-8 mt-6">
+            <a
+              href="https://nusountara.com"
+              target="_blank"
+              class="cursor-pointer"
+            >
+              <LogoNST
+                class="text-gray-300 hover:text-white transition-colors h-12"
+              />
             </a>
 
-            <div
-              class="flex flex-col items-start gap-y-0.5 font-bold tracking-tight text-white"
-            >
-              <span class="text-base !leading-none"
-                >Connect with us on Instagram</span
-              >
-              <a
-                :href="`https://www.instagram.com/${$store.state.instagram}`"
-                target="_blank"
-                class="text-2xl !leading-none hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#FCB045] hover:to-[#FD1D1D] transition"
-                >@nusountara</a
-              >
-            </div>
+            <a href="#" target="_blank" class="cursor-pointer">
+              <LogoPOP
+                class="text-gray-300 hover:text-white transition-colors h-12"
+              />
+            </a>
+
+            <a href="#" target="_blank" class="cursor-pointer">
+              <LogoNVB
+                class="text-gray-300 hover:text-white transition-colors h-12"
+              />
+            </a>
           </div>
-
-          <AvailableOn class="lg:hidden" />
-        </div>
-
-        <div class="footer-link-container">
-          <span class="footer-link-label">Series</span>
-          <div class="footer-link-list">
-            <nuxt-link to="/series">All Series</nuxt-link>
-            <nuxt-link to="/talks">NST Talks</nuxt-link>
-            <nuxt-link to="/radio">NST Radio</nuxt-link>
-            <nuxt-link to="/destinations">NST Destinations</nuxt-link>
-          </div>
-        </div>
-
-        <div class="footer-link-container">
-          <span class="footer-link-label">Discover</span>
-          <div class="footer-link-list">
-            <nuxt-link to="/top-charts">Top Charts</nuxt-link>
-            <nuxt-link to="/events">Events</nuxt-link>
-            <nuxt-link to="/collections">Collections</nuxt-link>
-            <nuxt-link to="/news">News</nuxt-link>
-            <nuxt-link to="/artists">Artists</nuxt-link>
-            <nuxt-link to="/playlists">Playlists</nuxt-link>
-          </div>
-        </div>
-
-        <div class="footer-link-container">
-          <AvailableOn class="hidden lg:flex" />
         </div>
       </div>
 
       <div
-        class="lg:py-2 flex items-center justify-center gap-x-4 footer-link-list"
+        class="flex items-center justify-center gap-x-4 footer-link-list mt-16 text-xs sm:text-sm"
       >
         <nuxt-link to="/terms" class="footer-link">Terms</nuxt-link>
         <span class="w-px h-1 bg-gray-600"></span>
@@ -76,10 +60,10 @@
       </div>
 
       <div
-        class="py-6 text-xs flex justify-center items-center text-center text-gray-400"
+        class="py-10 text-xs flex justify-center items-center text-center text-gray-400"
       >
         <span
-          >Copyright © {{ new Date().getFullYear() }} Nusountara. All rights
+          >Copyright © {{ new Date().getFullYear() }} INVRT. All rights
           reserved.</span
         >
       </div>
@@ -97,23 +81,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.footer-link-label {
-  @apply text-base sm:text-lg font-bold text-white;
-}
-
-.footer-link-container {
-  @apply col-span-1 md:col-span-2 flex flex-col;
-
-  & .footer-link-list {
-    @apply flex flex-col text-sm mt-4 gap-y-3;
-
-    & a {
-      @apply hover:text-white transition-colors;
-    }
-  }
-}
-
+<style scoped>
 .footer-link {
   @apply hover:text-white transition-colors;
 }

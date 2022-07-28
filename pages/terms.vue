@@ -1,7 +1,7 @@
 <template>
   <div id="terms-page" class="py-10 md:!py-16">
     <div
-      class="container mx-auto break-words px-4 prose prose-invert prose-a:text-indigo-400"
+      class="container mx-auto break-words px-4 prose prose-invert prose-a:text-red-400"
     >
       <h1>Terms of Service</h1>
 
@@ -291,14 +291,13 @@ export default {
 
   data() {
     return {
-      name: "Nusountara",
-      website: "https://nusountara.com",
-      companyName: "Nusountara",
-      address:
-        "Panorama Building, Jl. Tomang Raya No.63, RT.2/RW.13, Tomang, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11440",
-      email: "hello@nusountara.com",
-      contactPageLink: "https://nusountara.com/contact/",
-      lastUpdate: "May 7, 2022",
+      name: "INVRT Festival",
+      website: "https://invrtfestival.com",
+      companyName: "INVRT Festival",
+      address: "Jakarta, Indonesia",
+      email: "hello@invrtfestival.com",
+      contactPageLink: "https://invrtfestival.com/contact/",
+      lastUpdate: "July 28, 2022",
     };
   },
 };
