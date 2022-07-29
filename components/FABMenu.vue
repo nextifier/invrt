@@ -1,10 +1,12 @@
 <template>
-  <div class="relative">
+  <div
+    class="fixed right-4 bottom-12 z-[999] md:right-6 lg:hidden"
+    v-on-clickaway="hideMenu"
+  >
     <button
       type="button"
       @click="showMenu = !showMenu"
-      v-on-clickaway="hideMenu"
-      class="fixed right-4 bottom-12 z-[999] md:right-6 lg:hidden bg-black/40 backdrop-blur-md border border-white/20 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-md"
+      class="bg-black/40 backdrop-blur-md border border-white/20 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-md"
       v-wave
     >
       <div class="flex flex-col">
@@ -19,9 +21,10 @@
       </div>
     </button>
 
-    <!-- <div
-      class="z-[999] menu-list absolute top-0 right-0 -translate-y-full w-40 h-40 outline outline-white bg-gray-900"
-    ></div> -->
+    <div
+      v-if="showMenu"
+      class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full w-60 h-80 bg-black border border-white/20 rounded-xl"
+    ></div>
   </div>
 </template>
 
