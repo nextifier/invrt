@@ -10,11 +10,11 @@
       <div class="flex flex-col">
         <span
           class="h-px w-6 bg-white rounded-full transition-transform duration-300 -translate-y-1"
-          :class="{ 'rotate-45 translate-y-0': showMenu }"
+          :class="{ 'rotate-45 !translate-y-0': showMenu }"
         ></span>
         <span
           class="h-px w-6 bg-white rounded-full transition-transform duration-300 translate-y-1"
-          :class="{ '-rotate-45 translate-y-0': showMenu }"
+          :class="{ '-rotate-45 !translate-y-0': showMenu }"
         ></span>
       </div>
     </button>

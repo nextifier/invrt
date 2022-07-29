@@ -1,5 +1,5 @@
 export default {
-  target: 'server',
+  target: 'static',
 
   publicRuntimeConfig: {
     appName: 'INVRT Festival'
