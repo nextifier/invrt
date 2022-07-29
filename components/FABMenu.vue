@@ -23,8 +23,41 @@
 
     <div
       v-if="showMenu"
-      class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full w-60 h-80 bg-black border border-white/20 rounded-xl"
-    ></div>
+      class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full min-w-[12rem] bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl py-4 px-2"
+    >
+      <ul class="nav-list flex flex-col w-full">
+        <li @click="hideMenu">
+          <nuxt-link exact to="/" v-wave>
+            <IconHome class="h-5" />
+            <span>Home</span>
+          </nuxt-link>
+        </li>
+        <li @click="hideMenu">
+          <nuxt-link to="/about" v-wave>
+            <IconAbout class="h-5" />
+            <span>About</span>
+          </nuxt-link>
+        </li>
+        <li @click="hideMenu">
+          <nuxt-link to="/artists" v-wave>
+            <IconStar class="h-5" />
+            <span>Artists</span>
+          </nuxt-link>
+        </li>
+        <li @click="hideMenu">
+          <nuxt-link to="/floorplan" v-wave>
+            <IconFloorplan class="h-5" />
+            <span>Floor Plan</span>
+          </nuxt-link>
+        </li>
+        <li @click="hideMenu">
+          <nuxt-link to="/contact" v-wave>
+            <IconContact class="h-5" />
+            <span>Contact</span>
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -46,4 +79,16 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.nav-list li {
+  @apply w-full;
+
+  & a {
+    @apply flex items-center gap-x-3 px-6 py-4 rounded-lg  text-gray-300 transition-colors;
+
+    &.nuxt-link-active {
+      @apply bg-gray-900 text-white;
+    }
+  }
+}
+</style>
