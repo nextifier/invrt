@@ -19,7 +19,7 @@
               >
                 <img
                   :src="require(`~/assets/img/gallery/${image}`)"
-                  class="w-full aspect-video object-cover lg:rounded-2xl"
+                  class="w-full aspect-square object-cover lg:rounded-2xl"
                   loading="lazy"
                 />
               </div>
