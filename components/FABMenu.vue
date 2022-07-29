@@ -27,31 +27,52 @@
     >
       <ul class="nav-list flex flex-col w-full">
         <li @click="hideMenu">
-          <nuxt-link exact to="/" v-wave>
+          <nuxt-link
+            exact
+            to="/"
+            v-wave
+            @click.native="$scrollToTopIfCurrentPageIs('index')"
+          >
             <IconHome class="h-5" />
             <span>Home</span>
           </nuxt-link>
         </li>
         <li @click="hideMenu">
-          <nuxt-link to="/about" v-wave>
+          <nuxt-link
+            to="/about"
+            v-wave
+            @click.native="$scrollToTopIfCurrentPageIs('about')"
+          >
             <IconAbout class="h-5" />
             <span>About</span>
           </nuxt-link>
         </li>
         <li @click="hideMenu">
-          <nuxt-link to="/artists" v-wave>
+          <nuxt-link
+            to="/artists"
+            v-wave
+            @click.native="$scrollToTopIfCurrentPageIs('artists')"
+          >
             <IconStar class="h-5" />
             <span>Artists</span>
           </nuxt-link>
         </li>
         <li @click="hideMenu">
-          <nuxt-link to="/floorplan" v-wave>
+          <nuxt-link
+            to="/floorplan"
+            v-wave
+            @click.native="$scrollToTopIfCurrentPageIs('floorplan')"
+          >
             <IconFloorplan class="h-5" />
             <span>Floor Plan</span>
           </nuxt-link>
         </li>
         <li @click="hideMenu">
-          <nuxt-link to="/contact" v-wave>
+          <nuxt-link
+            to="/contact"
+            v-wave
+            @click.native="$scrollToTopIfCurrentPageIs('contact')"
+          >
             <IconContact class="h-5" />
             <span>Contact</span>
           </nuxt-link>

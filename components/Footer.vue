@@ -15,10 +15,14 @@
             </div>
           </a>
 
-          <div class="flex flex-col items-center gap-y-2">
+          <nuxt-link
+            to="/"
+            @click.native="$scrollToTopIfCurrentPageIs('index')"
+            class="flex flex-col items-center gap-y-2"
+          >
             <Logo class="text-white h-8 lg:h-9" />
             <LogoFestival class="text-white h-2.5" />
-          </div>
+          </nuxt-link>
         </div>
 
         <div class="flex flex-col items-center mt-10">
