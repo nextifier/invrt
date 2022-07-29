@@ -5,6 +5,7 @@
   >
     <Navbar />
     <Nuxt class="flex-auto mt-16 lg:mt-20" keep-alive />
+    <FABMenu />
     <Footer />
   </div>
 </template>
