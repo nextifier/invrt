@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div class="container">
+    <div class="sm:container">
       <div
         class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 gap-x-12 xl:gap-x-16"
       >
-        <div class="lg:col-span-5 flex flex-col items-start justify-end">
+        <div
+          class="lg:col-span-5 flex flex-col items-start justify-end px-4 sm:px-0"
+        >
           <h2
             class="text-white text-4xl lg:text-5xl font-display lowercase tracking-wider"
           >
