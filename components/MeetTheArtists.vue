@@ -14,7 +14,7 @@
         <div
           v-for="(artist, index) in artists"
           :key="index"
-          class="flex flex-col gap-y-3"
+          class="flex flex-col items-start"
         >
           <img
             :src="require(`~/assets/img/artists/${artist.img}`)"
@@ -22,7 +22,14 @@
             class="aspect-[4/5] w-full bg-gray-900 object-cover"
             loading="lazy"
           />
-          <span class="text-white">{{ artist.name }}</span>
+          <span class="text-white mt-3">{{ artist.name }}</span>
+          <a
+            :href="`https://www.instagram.com/${artist.ig_username}`"
+            target="_blank"
+            v-if="artist.ig_username"
+            class="mt-1 text-xs sm:text-sm hover:font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-amber-400 hover:to-rose-600 transition duration-300"
+            >@{{ artist.ig_username }}</a
+          >
         </div>
       </div>
     </div>

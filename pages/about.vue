@@ -40,13 +40,17 @@
         class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-12 gap-y-16"
       >
         <div class="flex flex-col">
-          <div class="flex gap-x-3 items-center">
+          <a
+            href="https://nusountara.com"
+            target="_blank"
+            class="flex gap-x-3 items-center hover:opacity-80 transition-opacity"
+          >
             <LogoNST class="text-white h-10" />
             <span
               class="font-display tracking-wider lowercase text-white text-2xl"
               >Nusountara</span
             >
-          </div>
+          </a>
 
           <div class="flex flex-col gap-y-3 mt-6">
             <p>
@@ -71,13 +75,17 @@
         </div>
 
         <div class="flex flex-col">
-          <div class="flex gap-x-3 items-center">
+          <a
+            href="https://www.instagram.com/popsiclesid"
+            target="_blank"
+            class="flex gap-x-3 items-center hover:opacity-80 transition-opacity"
+          >
             <LogoPOP class="text-white h-10" />
             <span
               class="font-display tracking-wider lowercase text-white text-2xl"
               >Popsicles</span
             >
-          </div>
+          </a>
 
           <div class="flex flex-col gap-y-3 mt-6">
             <p>
@@ -100,13 +108,17 @@
         </div>
 
         <div class="flex flex-col">
-          <div class="flex gap-x-3 items-center">
+          <a
+            href="https://www.instagram.com/nvb_id"
+            target="_blank"
+            class="flex gap-x-3 items-center hover:opacity-80 transition-opacity"
+          >
             <LogoNVB class="text-white h-10" />
             <span
               class="font-display tracking-wider lowercase text-white text-2xl"
               >No Vertical Boundaries</span
             >
-          </div>
+          </a>
 
           <div class="flex flex-col gap-y-3 mt-6">
             <p>

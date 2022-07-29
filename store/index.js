@@ -8,39 +8,48 @@ export const state = () => ({
   },
   artists: [{
       name: 'Anton Wirjono',
-      img: 'anton-wirjono.webp'
+      img: 'anton-wirjono.webp',
+      ig_username: 'antonwirjono'
     },
     {
       name: 'Ballistic Soundsystem',
-      img: 'ballistic-soundsystem.webp'
+      img: 'ballistic-soundsystem.webp',
+      ig_username: 'ballisticsoundsystem'
     },
     {
       name: 'Bobby Suryadi',
-      img: 'bobby-suryadi.webp'
+      img: 'bobby-suryadi.webp',
+      ig_username: 'bobbysuryadi'
     },
     {
       name: 'Ecilo',
-      img: 'ecilo.webp'
+      img: 'ecilo.webp',
+      ig_username: 'ecilo_official'
     },
     {
       name: 'House Cartel',
-      img: 'house-cartel.webp'
+      img: 'house-cartel.webp',
+      ig_username: 'house_cartel'
     },
     {
       name: 'Jonathan Kusuma',
-      img: 'jonathan-kusuma.webp'
+      img: 'jonathan-kusuma.webp',
+      ig_username: 'ojonkusuma'
     },
     {
       name: 'Marcel Andhika',
-      img: 'marcel.webp'
+      img: 'marcel.webp',
+      ig_username: 'mclandhika'
     },
     {
       name: 'Sunset People Project',
-      img: 'sunset-people-project.webp'
+      img: 'sunset-people-project.webp',
+      ig_username: 'sunsetpeopleproject'
     },
     {
       name: 'Tantra',
-      img: 'tantra.webp'
+      img: 'tantra.webp',
+      ig_username: 'tantra_official'
     },
   ]
 })

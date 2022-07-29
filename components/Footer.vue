@@ -34,13 +34,21 @@
               />
             </a>
 
-            <a href="#" target="_blank" class="cursor-pointer">
+            <a
+              href="https://www.instagram.com/popsiclesid"
+              target="_blank"
+              class="cursor-pointer"
+            >
               <LogoPOP
                 class="text-gray-300 hover:text-white transition-colors h-10 lg:h-12"
               />
             </a>
 
-            <a href="#" target="_blank" class="cursor-pointer">
+            <a
+              href="https://www.instagram.com/nvb_id"
+              target="_blank"
+              class="cursor-pointer"
+            >
               <LogoNVB
                 class="text-gray-300 hover:text-white transition-colors h-10 lg:h-12"
               />

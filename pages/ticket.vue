@@ -66,10 +66,10 @@
             >
               <span class="flex h-3 w-3 relative">
                 <span
-                  class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+                  class="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"
                 ></span>
                 <span
-                  class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
+                  class="relative inline-flex rounded-full h-3 w-3 bg-yellow-500"
                 ></span>
               </span>
               <span>{{ event.status }}</span>
@@ -223,7 +223,7 @@ export default {
     return {
       event: {
         title: "INVRT Festival",
-        status: "Ticket Available",
+        status: "Ticket will be available soon",
         date: "TBA",
         time: "TBA",
         location: "TBA",
