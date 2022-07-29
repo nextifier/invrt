@@ -1,7 +1,10 @@
 <template>
   <div>
     <Hero />
-    <MeetTheArtists class="mt-16" />
+    <!-- <Teaser class="pt-16 lg:pt-24" /> -->
+    <TheAwaited class="pt-16 lg:pt-24" />
+    <MeetTheArtists class="pt-16 lg:pt-24" />
+    <GetTicketCTA class="pt-16 lg:pt-24" />
   </div>
 </template>
 
