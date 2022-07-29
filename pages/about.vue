@@ -5,9 +5,10 @@
         class="grid grid-cols-1 lg:grid-cols-2 items-center gap-x-12 xl:gap-x-16"
       >
         <img
-          src="~/assets/img/about-img.jpg"
+          src="~/assets/img/about-img.webp"
           alt="About INVRT Festival"
-          class="aspect-square w-full object-cover"
+          class="aspect-square w-full object-cover pointer-events-none"
+          loading="lazy"
         />
 
         <div class="flex flex-col items-start px-4 sm:px-0">

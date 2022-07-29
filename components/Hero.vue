@@ -8,6 +8,8 @@
         src="~/assets/img/hero-img.jpg"
         alt="INVRT Festival"
         class="w-full lg:w-auto lg:h-[calc(100vh-5rem)] lg:mx-auto"
+        width="720"
+        height="1080"
       />
     </div>
     <div class="relative z-10">
@@ -51,7 +53,9 @@
             <img
               src="~/assets/img/hero-img.jpg"
               alt="INVRT Festival"
-              class="w-full lg:hidden"
+              class="w-full lg:hidden pointer-events-none"
+              width="720"
+              height="1080"
             />
           </div>
           <div
@@ -61,13 +65,19 @@
             <div
               class="flex flex-col gap-y-3 text-right items-end text-white lg:mt-24"
             >
-              <span class="font-bold tracking-tight text-3xl lg:text-4xl"
-                >Oct 1<span class="align-super text-sm">st</span>, 2022</span
+              <span
+                v-if="$store.state.event.date"
+                class="font-bold tracking-tight text-3xl lg:text-4xl"
+                >{{ $store.state.event.date }}</span
               >
-              <span class="font-bold tracking-tight text-xl lg:text-2xl"
-                >7 PM - 4 AM</span
+              <span
+                v-if="$store.state.event.time"
+                class="font-bold tracking-tight text-xl lg:text-2xl"
+                >{{ $store.state.event.time }}</span
               >
-              <span>Cibis Park Cilandak</span>
+              <span v-if="$store.state.event.location">{{
+                $store.state.event.location
+              }}</span>
             </div>
           </div>
         </div>
