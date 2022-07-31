@@ -99,7 +99,8 @@
             </div>
 
             <div class="mt-12 flex flex-col items-start">
-              <span class="text-white uppercase tracking-[0.4em]"
+              <span
+                class="text-white text-xs sm:text-sm uppercase tracking-[0.4em]"
                 >Overview</span
               >
               <div class="mt-2">{{ event.overview }}</div>
@@ -166,7 +167,8 @@
               <ul class="collapsible">
                 <li>
                   <div class="collapsible-header">
-                    <span class="text-white uppercase tracking-[0.4em]"
+                    <span
+                      class="text-white uppercase text-xs sm:text-sm tracking-[0.4em]"
                       >VIP Packages</span
                     >
                     <button tabindex="-1">
@@ -332,15 +334,15 @@ td {
 }
 
 .collapsible > li {
-  @apply rounded-lg overflow-hidden;
+  @apply rounded-lg overflow-hidden border border-gray-700;
 }
 
 .collapsible-header {
-  @apply bg-gray-900 px-6 py-4 w-full cursor-pointer flex justify-between items-center;
+  @apply bg-black px-6 py-4 w-full cursor-pointer flex justify-between items-center;
 }
 
 .collapsible-body {
-  @apply bg-gray-900 px-6 pt-3 pb-6 w-full space-y-4 text-gray-200;
+  @apply bg-black px-6 pt-3 pb-6 w-full space-y-4 text-gray-200;
 }
 
 .collapsible-body {
@@ -348,7 +350,7 @@ td {
 }
 
 .collapsible-header button {
-  @apply outline-none w-8 h-8 hover:bg-gray-700 hover:bg-opacity-60 focus:bg-gray-700 focus:bg-opacity-80 rounded-full flex justify-center items-center;
+  @apply outline-none w-8 h-8 hover:bg-gray-800 hover:bg-opacity-60 focus:bg-gray-800 focus:bg-opacity-80 rounded-full flex justify-center items-center;
 }
 
 .collapsible-header svg {

@@ -11,7 +11,7 @@
         <img
           src="~/assets/img/floorplan/floorplan-1.jpg"
           alt="Floor Plan Outdoor"
-          class="w-full"
+          class="w-full materialboxed"
           width="1400"
           height="754"
           loading="lazy"
@@ -20,7 +20,7 @@
         <img
           src="~/assets/img/floorplan/floorplan-2.jpg"
           alt="Floor Plan Outdoor"
-          class="w-full"
+          class="w-full materialboxed"
           width="1400"
           height="788"
           loading="lazy"
@@ -36,6 +36,10 @@ export default {
     return {
       title: `Floor Plan – ${this.$config.appName}`,
     };
+  },
+
+  mounted() {
+    M.Materialbox.init(document.querySelectorAll(".materialboxed"), {});
   },
 };
 </script>
