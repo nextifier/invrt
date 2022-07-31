@@ -77,6 +77,10 @@ export default {
       mode: 'client'
     },
     {
+      src: '~/plugins/collapsible.js',
+      mode: 'client'
+    },
+    {
       src: '~/plugins/tooltip.js',
       mode: 'client'
     },

@@ -23,7 +23,7 @@
 
     <div
       v-if="showMenu"
-      class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full min-w-[12rem] bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl py-4 px-2"
+      class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full min-w-[14rem] bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl py-4 px-2"
     >
       <ul class="nav-list flex flex-col w-full">
         <li @click="hideMenu">
@@ -75,6 +75,17 @@
           >
             <IconContact class="h-5" />
             <span>Contact</span>
+          </nuxt-link>
+        </li>
+        <li @click="hideMenu">
+          <nuxt-link
+            to="/ticket"
+            class=""
+            v-wave
+            @click.native="$scrollToTopIfCurrentPageIs('ticket')"
+          >
+            <IconTicket class="h-5" />
+            <span>Get Your Ticket</span>
           </nuxt-link>
         </li>
       </ul>
