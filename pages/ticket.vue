@@ -152,15 +152,24 @@
                   price.
                 </p>
               </div>
-              <a
-                href="https://www.traveloka.com/en-id/activities/category/entertainment?funnel_source=Merchandising.AA.Xperience-LP-web-ID-LandingPage&funnel_id=M_0_516ac880c4028b9a3711e04004d6bd1135cd486b_7_0141beb2c32a2a7a70ef3b9cb50ca4c50ca76bec&internal_source=true"
-                target="_blank"
-                class="px-6 py-6 bg-white hover:bg-gray-200 text-black font-bold text-base sm:text-lg tracking-tight transition-colors duration-300 mt-6 flex items-baseline gap-x-1.5"
+
+              <div v-if="!openSellingTicket" class="mt-10">
+                <span
+                  class="block text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-indigo-400"
+                  >3 days to go to unlock your ticket</span
+                >
+              </div>
+
+              <button
+                type="button"
+                :disabled="!openSellingTicket"
+                @click.prevent="openModal('bottom-sheet-checkout')"
+                class="flex px-10 py-6 bg-white hover:bg-gray-200 text-black font-bold text-base sm:text-lg tracking-tight transition-colors duration-300 mt-6 items-center gap-x-1.5 cursor-pointer disabled:bg-black disabled:text-gray-400 disabled:border disabled:border-dotted disabled:border-gray-500 disabled:cursor-not-allowed"
                 v-wave
               >
-                <span>Buy ticket now on</span>
-                <LogoTraveloka class="h-5 lg:h-6" />
-              </a>
+                <span>Checkout</span>
+                <IconArrowRight class="h-5" />
+              </button>
             </div>
 
             <div class="mt-16 w-full">
@@ -251,6 +260,40 @@
         </div>
       </div>
     </div>
+
+    <bottom-sheet
+      v-if="event.checkoutLinks && event.checkoutLinks.length"
+      ref="bottom-sheet-checkout"
+      id="bottom-sheet-checkout"
+      maxHeight="380px"
+      :withCloseBtn="true"
+    >
+      <div
+        class="modal-content px-4 sm:px-6 pt-2 pb-6 flex flex-col text-center gap-y-3"
+      >
+        <span class="text-white font-bold text-base">Continue on</span>
+        <a
+          v-for="(bookingPlatform, index) in event.checkoutLinks"
+          :key="index"
+          :href="bookingPlatform.link"
+          target="_blank"
+          class="checkout-link"
+          v-wave
+        >
+          <img
+            :src="
+              require(`~/assets/img/ticketing-platform/${bookingPlatform.image}`)
+            "
+            :alt="bookingPlatform.name"
+            class="h-6"
+          />
+        </a>
+        <p class="text-xs sm:text-sm text-gray-400 mt-2">
+          The price might be slightly different on any platform you choose to
+          checkout with.
+        </p>
+      </div>
+    </bottom-sheet>
   </div>
 </template>
 
@@ -263,6 +306,7 @@ export default {
   },
   data() {
     return {
+      openSellingTicket: false,
       event: {
         title: "INVRT Festival",
         status: "Ticket will be available soon",
@@ -272,6 +316,28 @@ export default {
         overview:
           "An exclusive event featuring talented artists that had widely owned their fame through the music, visual & technology industry.",
         images: ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp"],
+        checkoutLinks: [
+          {
+            name: "Traveloka",
+            link: "https://www.traveloka.com/en-id/activities/category/entertainment?funnel_source=Merchandising.AA.Xperience-LP-web-ID-LandingPage&funnel_id=M_0_516ac880c4028b9a3711e04004d6bd1135cd486b_7_0141beb2c32a2a7a70ef3b9cb50ca4c50ca76bec&internal_source=true",
+            image: "traveloka.svg",
+          },
+          {
+            name: "LOKET.com",
+            link: "https://www.loket.com/event/",
+            image: "loket-com.png",
+          },
+          {
+            name: "gotix",
+            link: "https://go-tix.id/events/",
+            image: "gotix.svg",
+          },
+          {
+            name: "Tokopedia",
+            link: "https://tokopedia.link/",
+            image: "tokopedia.svg",
+          },
+        ],
       },
       swiperOption: {
         navigation: {
@@ -303,6 +369,16 @@ export default {
     M.Collapsible.init(document.querySelectorAll(".collapsible"), {
       //   accordion: false
     });
+  },
+
+  methods: {
+    openModal(modalSlug) {
+      this.$refs[modalSlug].open();
+    },
+
+    closeModal(modalSlug) {
+      this.$refs[modalSlug].close();
+    },
   },
 };
 </script>
@@ -359,5 +435,11 @@ td {
 
 .collapsible > li.active > .collapsible-header svg {
   @apply transform rotate-180;
+}
+
+#bottom-sheet-checkout {
+  & .checkout-link {
+    @apply bg-white text-black font-bold tracking-tight rounded-full py-3 px-4 flex items-center justify-center gap-x-1;
+  }
 }
 </style>
