@@ -67,7 +67,7 @@
             <span>Floor Plan</span>
           </nuxt-link>
         </li>
-        <li @click="hideMenu">
+        <!-- <li @click="hideMenu">
           <nuxt-link
             to="/contact"
             v-wave
@@ -76,7 +76,7 @@
             <IconContact class="h-5" />
             <span>Contact</span>
           </nuxt-link>
-        </li>
+        </li> -->
         <li @click="hideMenu">
           <nuxt-link
             to="/ticket"

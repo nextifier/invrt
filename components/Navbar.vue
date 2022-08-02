@@ -54,14 +54,14 @@
             <span>Floor Plan</span>
           </nuxt-link>
 
-          <nuxt-link
+          <!-- <nuxt-link
             to="/contact"
             class="nav-link flex"
             @click.native="$scrollToTopIfCurrentPageIs('contact')"
             v-wave
           >
             <span>Contact</span>
-          </nuxt-link>
+          </nuxt-link> -->
         </nav>
 
         <div class="flex items-center gap-x-5 ml-auto">
