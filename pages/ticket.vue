@@ -156,7 +156,7 @@
               <div v-if="!openSellingTicket" class="mt-10">
                 <span
                   class="block text-6xl xl:text-8xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-indigo-400"
-                  >2 days to go to unlock your ticket</span
+                  >1 day to go to unlock your ticket</span
                 >
               </div>
 
