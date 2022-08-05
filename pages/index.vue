@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero />
-    <!-- <Teaser class="pt-16 lg:pt-24" /> -->
+    <Teaser class="pt-16 lg:pt-24" />
     <TheAwaited class="pt-24 lg:pt-32" />
     <!-- <MeetTheArtists class="pt-24 lg:pt-32" /> -->
     <Gallery class="pt-24 lg:pt-32" />
