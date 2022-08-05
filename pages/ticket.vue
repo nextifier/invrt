@@ -172,7 +172,7 @@
               </button>
             </div>
 
-            <div class="mt-16 w-full">
+            <!-- <div class="mt-16 w-full">
               <ul class="collapsible">
                 <li>
                   <div class="collapsible-header">
@@ -255,7 +255,7 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
