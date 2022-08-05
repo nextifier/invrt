@@ -310,7 +310,7 @@ export default {
       event: {
         title: "INVRT Festival",
         status: "Ticket will be available soon",
-        date: "TBA",
+        date: "October 1, 2022",
         time: "TBA",
         location: "TBA",
         overview:
