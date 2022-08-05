@@ -17,9 +17,7 @@
         <div
           class="lg:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left lg:justify-center"
         >
-          <h2
-            class="text-white text-4xl lg:text-5xl font-display lowercase tracking-wider"
-          >
+          <h2 class="text-white text-4xl lg:text-5xl font-display uppercase">
             Tickets are running out!
           </h2>
           <div class="mt-14">

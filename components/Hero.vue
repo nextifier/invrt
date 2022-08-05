@@ -22,7 +22,7 @@
               class="flex flex-col items-center text-center lg:items-start lg:text-left"
             >
               <h1
-                class="text-white text-6xl lg:text-7xl font-display lowercase tracking-wider"
+                class="text-white text-6xl lg:text-7xl font-display uppercase"
               >
                 INVRT Music Festival
               </h1>
@@ -67,17 +67,19 @@
             >
               <span
                 v-if="$store.state.event.date"
-                class="font-bold tracking-tight text-3xl lg:text-4xl"
+                class="font-display uppercase text-3xl lg:text-4xl"
                 >{{ $store.state.event.date }}</span
               >
               <span
                 v-if="$store.state.event.time"
-                class="font-bold tracking-tight text-xl lg:text-2xl"
+                class="font-display uppercase text-xl lg:text-2xl"
                 >{{ $store.state.event.time }}</span
               >
-              <span v-if="$store.state.event.location">{{
-                $store.state.event.location
-              }}</span>
+              <span
+                v-if="$store.state.event.location"
+                class="font-display uppercase"
+                >{{ $store.state.event.location }}</span
+              >
             </div>
           </div>
         </div>

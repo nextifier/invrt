@@ -13,7 +13,7 @@
 
         <div class="flex flex-col items-start px-4 sm:px-0">
           <h1
-            class="font-display lowercase tracking-wider text-3xl lg:text-4xl text-white text-center"
+            class="font-display uppercase text-3xl lg:text-4xl text-white text-center"
           >
             Who we are
           </h1>
@@ -46,8 +46,7 @@
             class="flex gap-x-3 items-center hover:opacity-80 transition-opacity"
           >
             <LogoNST class="text-white h-10" />
-            <span
-              class="font-display tracking-wider lowercase text-white text-2xl"
+            <span class="font-display uppercase text-white text-2xl"
               >Nusountara</span
             >
           </a>
@@ -81,8 +80,7 @@
             class="flex gap-x-3 items-center hover:opacity-80 transition-opacity"
           >
             <LogoPOP class="text-white h-10" />
-            <span
-              class="font-display tracking-wider lowercase text-white text-2xl"
+            <span class="font-display uppercase text-white text-2xl"
               >Popsicles</span
             >
           </a>
@@ -114,8 +112,7 @@
             class="flex gap-x-3 items-center hover:opacity-80 transition-opacity"
           >
             <LogoNVB class="text-white h-10" />
-            <span
-              class="font-display tracking-wider lowercase text-white text-2xl"
+            <span class="font-display uppercase text-white text-2xl"
               >No Vertical Boundaries</span
             >
           </a>

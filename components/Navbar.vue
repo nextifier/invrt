@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="fixed z-[998] w-full h-16 lg:h-20 flex items-center justify-center transition-all duration-300 ease-in-out text-sm bg-black"
+      class="fixed z-[998] w-full h-16 lg:h-20 flex items-center justify-center transition-all duration-300 ease-in-out bg-black"
     >
       <div class="container mx-auto h-full flex items-center">
         <nuxt-link
@@ -10,8 +10,8 @@
           class="brand-logo flex flex-col items-center gap-y-1.5 lg:gap-y-2 flex-shrink-0"
           v-wave
         >
-          <Logo class="h-6 sm:h-7 text-primary-lighten" />
-          <LogoFestival class="h-2 lg:h-2.5" />
+          <Logo class="h-6 sm:h-7 text-white" />
+          <!-- <LogoFestival class="h-2 lg:h-2.5" /> -->
         </nuxt-link>
 
         <nav
@@ -46,12 +46,12 @@
           </nuxt-link>
 
           <nuxt-link
-            to="/floorplan"
+            to="/venue"
             class="nav-link flex"
-            @click.native="$scrollToTopIfCurrentPageIs('floorplan')"
+            @click.native="$scrollToTopIfCurrentPageIs('venue')"
             v-wave
           >
-            <span>Floor Plan</span>
+            <span>Venue</span>
           </nuxt-link>
 
           <!-- <nuxt-link
@@ -67,7 +67,7 @@
         <div class="flex items-center gap-x-5 ml-auto">
           <nuxt-link
             to="/ticket"
-            class="bg-primary text-white px-5 py-3 lg:px-6 lg:py-5 hover:bg-primary-darken transition-colors font-bold uppercase"
+            class="border border-white !leading-none text-white px-5 py-3 lg:px-6 lg:py-4 hover:bg-primary hover:border-transparent transition-colors font-display uppercase flex items-center justify-center"
             @click.native="$scrollToTopIfCurrentPageIs('ticket')"
             v-wave
           >
@@ -85,10 +85,10 @@ export default {};
 
 <style lang="scss" scoped>
 .nav-link {
-  @apply px-6 py-4 hover:bg-gray-900 flex justify-center items-center transition-colors relative h-full rounded-lg text-gray-200 flex-shrink-0;
+  @apply px-6 py-4 hover:bg-gray-900 flex justify-center items-center transition-colors relative h-full rounded-lg text-gray-200 flex-shrink-0 font-display uppercase;
 
   &.nuxt-link-active {
-    @apply bg-gray-900 text-white;
+    @apply underline decoration-gray-500 decoration-2 underline-offset-8 text-white;
   }
 }
 </style>

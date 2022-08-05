@@ -2,7 +2,7 @@
   <div class="py-10 lg:py-16">
     <div class="container">
       <h1
-        class="font-display lowercase tracking-wider text-3xl lg:text-4xl text-white text-center"
+        class="font-display uppercase text-3xl lg:text-4xl text-white text-center"
       >
         Meet the Artists
       </h1>

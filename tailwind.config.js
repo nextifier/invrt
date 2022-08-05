@@ -27,8 +27,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'sans': ['PlusJakartaSans', ...defaultTheme.fontFamily.sans],
-        'display': ['PaperPlanets', ...defaultTheme.fontFamily.sans]
+        'sans': ['PPMori', ...defaultTheme.fontFamily.sans],
+        'display': ['PPSupplySans', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         'primary': '#E50000',

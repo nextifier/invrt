@@ -7,9 +7,7 @@
         <div
           class="lg:col-span-5 flex flex-col items-start justify-end px-4 sm:px-0"
         >
-          <h2
-            class="text-white text-4xl lg:text-5xl font-display lowercase tracking-wider"
-          >
+          <h2 class="text-white text-4xl lg:text-5xl font-display uppercase">
             The awaited night is near
           </h2>
           <p class="mt-4">

@@ -14,9 +14,7 @@
         <div
           class="px-4 sm:px-0 -mt-8 lg:-mt-16 flex flex-col items-center text-center"
         >
-          <h2
-            class="text-white text-4xl lg:text-5xl font-display lowercase tracking-wider"
-          >
+          <h2 class="text-white text-4xl lg:text-5xl font-display uppercase">
             See you<br />
             at the party!
           </h2>

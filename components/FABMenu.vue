@@ -59,12 +59,12 @@
         </li>
         <li @click="hideMenu">
           <nuxt-link
-            to="/floorplan"
+            to="/venue"
             v-wave
-            @click.native="$scrollToTopIfCurrentPageIs('floorplan')"
+            @click.native="$scrollToTopIfCurrentPageIs('venue')"
           >
             <IconFloorplan class="h-5" />
-            <span>Floor Plan</span>
+            <span>Venue</span>
           </nuxt-link>
         </li>
         <!-- <li @click="hideMenu">

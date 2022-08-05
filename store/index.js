@@ -2,7 +2,7 @@ export const state = () => ({
   appName: 'INTRV Festival',
   instagram: 'invrtfestival',
   event: {
-    date: 'Date To Be Announced',
+    date: 'October 1, 2022',
     // time: '7 PM - 4 AM',
     location: 'Unknown Place',
   },
