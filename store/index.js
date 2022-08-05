@@ -3,8 +3,8 @@ export const state = () => ({
   instagram: 'invrtfestival',
   event: {
     date: 'October 1, 2022',
-    // time: '7 PM - 4 AM',
-    location: 'Unknown Place',
+    time: '7 PM – 4 AM',
+    location: 'CIBIS Park Warehouse',
   },
   artists: [{
       name: 'Anton Wirjono',

@@ -14,47 +14,46 @@
           <!-- <LogoFestival class="h-2 lg:h-2.5" /> -->
         </nuxt-link>
 
-        <nav
-          class="hidden absolute left-1/2 -translate-x-1/2 lg:flex lg:items-center gap-x-3"
-        >
-          <nuxt-link
-            exact
-            to="/"
-            class="nav-link flex"
-            @click.native="$scrollToTopIfCurrentPageIs('index')"
-            v-wave
-          >
-            <span>Home</span>
-          </nuxt-link>
+        <div class="flex items-center ml-auto">
+          <nav class="hidden lg:flex lg:items-center gap-x-3 mr-10">
+            <nuxt-link
+              exact
+              to="/"
+              class="nav-link flex"
+              @click.native="$scrollToTopIfCurrentPageIs('index')"
+              v-wave
+            >
+              <span>Home</span>
+            </nuxt-link>
 
-          <nuxt-link
-            to="/about"
-            class="nav-link flex"
-            @click.native="$scrollToTopIfCurrentPageIs('about')"
-            v-wave
-          >
-            <span>About</span>
-          </nuxt-link>
+            <nuxt-link
+              to="/about"
+              class="nav-link flex"
+              @click.native="$scrollToTopIfCurrentPageIs('about')"
+              v-wave
+            >
+              <span>About</span>
+            </nuxt-link>
 
-          <nuxt-link
-            to="/artists"
-            class="nav-link flex"
-            @click.native="$scrollToTopIfCurrentPageIs('artists')"
-            v-wave
-          >
-            <span>Artists</span>
-          </nuxt-link>
+            <nuxt-link
+              to="/artists"
+              class="nav-link flex"
+              @click.native="$scrollToTopIfCurrentPageIs('artists')"
+              v-wave
+            >
+              <span>Artists</span>
+            </nuxt-link>
 
-          <nuxt-link
-            to="/venue"
-            class="nav-link flex"
-            @click.native="$scrollToTopIfCurrentPageIs('venue')"
-            v-wave
-          >
-            <span>Venue</span>
-          </nuxt-link>
+            <nuxt-link
+              to="/venue"
+              class="nav-link flex"
+              @click.native="$scrollToTopIfCurrentPageIs('venue')"
+              v-wave
+            >
+              <span>Venue</span>
+            </nuxt-link>
 
-          <!-- <nuxt-link
+            <!-- <nuxt-link
             to="/contact"
             class="nav-link flex"
             @click.native="$scrollToTopIfCurrentPageIs('contact')"
@@ -62,9 +61,8 @@
           >
             <span>Contact</span>
           </nuxt-link> -->
-        </nav>
+          </nav>
 
-        <div class="flex items-center gap-x-5 ml-auto">
           <nuxt-link
             to="/ticket"
             class="border border-white !leading-none text-white px-5 py-3 lg:px-6 lg:py-4 hover:bg-primary hover:border-transparent transition-colors font-display uppercase flex items-center justify-center"
