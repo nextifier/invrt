@@ -288,10 +288,10 @@
             class="h-6"
           />
         </a>
-        <p class="text-xs sm:text-sm text-gray-400 mt-2">
+        <!-- <p class="text-xs sm:text-sm text-gray-400 mt-2">
           The price might be slightly different on any platform you choose to
           checkout with.
-        </p>
+        </p> -->
       </div>
     </bottom-sheet>
   </div>
@@ -306,7 +306,7 @@ export default {
   },
   data() {
     return {
-      openSellingTicket: false,
+      openSellingTicket: true,
       event: {
         title: "INVRT Festival",
         status: "Ticket Available",
