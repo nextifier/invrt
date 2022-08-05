@@ -311,7 +311,7 @@ export default {
         title: "INVRT Festival",
         status: "Ticket Available",
         date: "October 1, 2022",
-        time: "7 PM – 4 AM",
+        time: "7 PM – 1 AM",
         location: "CIBIS Park Warehouse",
         overview:
           "An exclusive event featuring talented artists that had widely owned their fame through the music, visual & technology industry.",

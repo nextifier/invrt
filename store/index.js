@@ -3,7 +3,7 @@ export const state = () => ({
   instagram: 'invrtfestival',
   event: {
     date: 'October 1, 2022',
-    time: '7 PM – 4 AM',
+    time: '7 PM – 1 AM',
     location: 'CIBIS Park Warehouse',
   },
   artists: [{
