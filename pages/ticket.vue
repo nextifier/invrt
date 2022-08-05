@@ -1,10 +1,8 @@
 <template>
-  <div class="sm:pt-16 pb-24 lg:pb-32">
-    <div class="sm:container">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 gap-x-16 xl:gap-x-24"
-      >
-        <div class="lg:col-span-6 lg:pl-4">
+  <div class="py-10 lg:py-16">
+    <div class="container max-w-3xl">
+      <div class="grid grid-cols-1 gap-y-8 gap-x-16 xl:gap-x-24">
+        <!-- <div class="lg:col-span-6 lg:pl-4">
           <div
             v-swiper="swiperOption"
             :instance-name="event.slug"
@@ -57,10 +55,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="lg:col-span-6 px-4 lg:pl-0">
-          <div class="flex flex-col items-start lg:pt-8">
+        <div class="">
+          <div class="flex flex-col items-start">
             <div
               class="flex items-center gap-x-2 px-4 py-4 rounded-full bg-gray-900 text-white text-xs sm:text-sm"
             >
@@ -339,32 +337,32 @@ export default {
           // },
         ],
       },
-      swiperOption: {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        grabCursor: true,
-        slidesPerView: 1,
-      },
-      swiperThumbsOption: {
-        grabCursor: true,
-        slidesPerView: 5,
-        spaceBetween: 5,
-        watchSlidesProgress: true,
-        slideToClickedSlide: true,
-        touchRatio: 0.2,
-        centeredSlides: true,
-      },
+      // swiperOption: {
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      //   grabCursor: true,
+      //   slidesPerView: 1,
+      // },
+      // swiperThumbsOption: {
+      //   grabCursor: true,
+      //   slidesPerView: 5,
+      //   spaceBetween: 5,
+      //   watchSlidesProgress: true,
+      //   slideToClickedSlide: true,
+      //   touchRatio: 0.2,
+      //   centeredSlides: true,
+      // },
     };
   },
   mounted() {
-    this.$nextTick(() => {
-      const swiperTop = this.$refs.swiperTop.swiper;
-      const swiperThumbs = this.$refs.swiperThumbs.swiper;
-      swiperTop.controller.control = swiperThumbs;
-      swiperThumbs.controller.control = swiperTop;
-    });
+    // this.$nextTick(() => {
+    //   const swiperTop = this.$refs.swiperTop.swiper;
+    //   const swiperThumbs = this.$refs.swiperThumbs.swiper;
+    //   swiperTop.controller.control = swiperThumbs;
+    //   swiperThumbs.controller.control = swiperTop;
+    // });
 
     M.Collapsible.init(document.querySelectorAll(".collapsible"), {
       //   accordion: false
