@@ -99,6 +99,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxt/postcss8',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -110,6 +111,10 @@ export default {
     'vue-scrollto/nuxt',
     'v-wave/nuxt',
   ],
+
+  googleAnalytics: {
+    id: 'UA-211883138-2'
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
