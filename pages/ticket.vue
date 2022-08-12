@@ -315,11 +315,11 @@ export default {
           "An exclusive event featuring talented artists that had widely owned their fame through the music, visual & technology industry.",
         images: ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp"],
         checkoutLinks: [
-          // {
-          //   name: "Traveloka",
-          //   link: "https://www.traveloka.com/en-id/activities/category/entertainment?funnel_source=Merchandising.AA.Xperience-LP-web-ID-LandingPage&funnel_id=M_0_516ac880c4028b9a3711e04004d6bd1135cd486b_7_0141beb2c32a2a7a70ef3b9cb50ca4c50ca76bec&internal_source=true",
-          //   image: "traveloka.svg",
-          // },
+          {
+            name: "Traveloka",
+            link: "https://www.traveloka.com/en-id/activities/indonesia/product/invrt-music-festival-3164426144308",
+            image: "traveloka.svg",
+          },
           {
             name: "LOKET.com",
             link: "https://widget.loket.com/widget/3o2pmfxzpkwnqdde",
