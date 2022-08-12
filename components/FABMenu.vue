@@ -21,53 +21,54 @@
       </div>
     </button>
 
-    <div
-      v-if="showMenu"
-      class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full min-w-[14rem] bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl py-4 px-2"
-    >
-      <ul class="nav-list flex flex-col w-full">
-        <li @click="hideMenu">
-          <nuxt-link
-            exact
-            to="/"
-            v-wave
-            @click.native="$scrollToTopIfCurrentPageIs('index')"
-          >
-            <IconHome class="h-5" />
-            <span>Home</span>
-          </nuxt-link>
-        </li>
-        <li @click="hideMenu">
-          <nuxt-link
-            to="/about"
-            v-wave
-            @click.native="$scrollToTopIfCurrentPageIs('about')"
-          >
-            <IconAbout class="h-5" />
-            <span>About</span>
-          </nuxt-link>
-        </li>
-        <li @click="hideMenu">
-          <nuxt-link
-            to="/artists"
-            v-wave
-            @click.native="$scrollToTopIfCurrentPageIs('artists')"
-          >
-            <IconStar class="h-5" />
-            <span>Artists</span>
-          </nuxt-link>
-        </li>
-        <li @click="hideMenu">
-          <nuxt-link
-            to="/venue"
-            v-wave
-            @click.native="$scrollToTopIfCurrentPageIs('venue')"
-          >
-            <IconFloorplan class="h-5" />
-            <span>Venue</span>
-          </nuxt-link>
-        </li>
-        <!-- <li @click="hideMenu">
+    <transition name="menu">
+      <div
+        v-if="showMenu"
+        class="z-[999] menu-list absolute -top-4 right-0 -translate-y-full min-w-[14rem] bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl py-4 px-2"
+      >
+        <ul class="nav-list flex flex-col w-full">
+          <li @click="hideMenu">
+            <nuxt-link
+              exact
+              to="/"
+              v-wave
+              @click.native="$scrollToTopIfCurrentPageIs('index')"
+            >
+              <IconHome class="h-5" />
+              <span>Home</span>
+            </nuxt-link>
+          </li>
+          <li @click="hideMenu">
+            <nuxt-link
+              to="/about"
+              v-wave
+              @click.native="$scrollToTopIfCurrentPageIs('about')"
+            >
+              <IconAbout class="h-5" />
+              <span>About</span>
+            </nuxt-link>
+          </li>
+          <li @click="hideMenu">
+            <nuxt-link
+              to="/artists"
+              v-wave
+              @click.native="$scrollToTopIfCurrentPageIs('artists')"
+            >
+              <IconStar class="h-5" />
+              <span>Artists</span>
+            </nuxt-link>
+          </li>
+          <li @click="hideMenu">
+            <nuxt-link
+              to="/venue"
+              v-wave
+              @click.native="$scrollToTopIfCurrentPageIs('venue')"
+            >
+              <IconFloorplan class="h-5" />
+              <span>Venue</span>
+            </nuxt-link>
+          </li>
+          <!-- <li @click="hideMenu">
           <nuxt-link
             to="/contact"
             v-wave
@@ -77,19 +78,20 @@
             <span>Contact</span>
           </nuxt-link>
         </li> -->
-        <li @click="hideMenu">
-          <nuxt-link
-            to="/ticket"
-            class=""
-            v-wave
-            @click.native="$scrollToTopIfCurrentPageIs('ticket')"
-          >
-            <IconTicket class="h-5" />
-            <span>Get Your Ticket</span>
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
+          <li @click="hideMenu">
+            <nuxt-link
+              to="/ticket"
+              class=""
+              v-wave
+              @click.native="$scrollToTopIfCurrentPageIs('ticket')"
+            >
+              <IconTicket class="h-5" />
+              <span>Get Your Ticket</span>
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -122,5 +124,14 @@ export default {
       @apply bg-gray-900 text-white;
     }
   }
+}
+
+.menu-enter-active,
+.menu-leave-active {
+  @apply scale-100 origin-bottom-right transition-transform duration-300 ease-in-out;
+}
+.menu-enter,
+.menu-leave-active {
+  @apply scale-0;
 }
 </style>

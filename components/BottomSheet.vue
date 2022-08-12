@@ -127,7 +127,7 @@ export default {
     },
     alignCenterOnBiggerScreen: {
       type: Boolean,
-      default: false,
+      default: true,
     },
   },
   methods: {
@@ -162,7 +162,7 @@ export default {
             document.body.style.overflow = "";
             this.$emit("closed");
           } else {
-            this.cardP = 16;
+            this.cardP = 0;
           }
         }
       }
@@ -256,9 +256,11 @@ export default {
       transition: bottom 0.3s ease;
     }
     &.fx-fadein-scale {
-      transform: translate(-50%, 0) scale(0.7);
-      opacity: 0;
-      transition: all 0.3s;
+      // transform: translate(-50%, 0) scale(0.7);
+      // opacity: 0;
+      // transition: all 0.3s;
+
+      @apply -translate-x-1/2 translate-y-0 scale-75 opacity-0 transition-all duration-300 md:transition-none;
     }
     &.fx-slide-from-right {
       transform: translate(100%, 0);
@@ -275,7 +277,7 @@ export default {
     @apply h-6 flex items-start pt-3 relative;
   }
   &__bar {
-    @apply block w-12 h-1 rounded-full absolute left-1/2 -translate-x-1/2 cursor-pointer bg-gray-700;
+    @apply block md:hidden w-12 h-1 rounded-full absolute left-1/2 -translate-x-1/2 cursor-pointer bg-gray-700;
   }
   & .close-btn {
     @apply bg-gray-800 bg-opacity-0 hover:bg-opacity-100 text-gray-500 p-1 rounded-full flex items-center justify-center ml-auto mr-3;
