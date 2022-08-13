@@ -330,11 +330,11 @@ export default {
             link: "https://go-tix.id/events/invrt-music-festival-18650",
             image: "gotix.svg",
           },
-          // {
-          //   name: "Tokopedia",
-          //   link: "https://tokopedia.link/",
-          //   image: "tokopedia.svg",
-          // },
+          {
+            name: "Tokopedia",
+            link: "https://www.tokopedia.com/events/detail/invrt-music-festival/",
+            image: "tokopedia.svg",
+          },
         ],
       },
       // swiperOption: {
