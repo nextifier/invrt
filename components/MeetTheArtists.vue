@@ -9,7 +9,7 @@
 
       <div
         v-if="artists && artists.length"
-        class="grid grid-cols-2 md:grid-cols-3 max-w-4xl mx-auto gap-x-4 gap-y-12 mt-10 lg:mt-16"
+        class="grid grid-cols-2 md:grid-cols-3 gap-x-2 lg:gap-x-4 gap-y-8 mt-6 lg:mt-6"
       >
         <div
           v-for="(artist, index) in artists"
@@ -19,7 +19,7 @@
           <img
             :src="require(`~/assets/img/artists/${artist.img}`)"
             :alt="artist.name"
-            class="aspect-[4/5] w-full bg-gray-900 object-cover"
+            class="aspect-square w-full bg-gray-900 object-cover"
             loading="lazy"
           />
           <span class="text-white mt-3">{{ artist.name }}</span>
@@ -29,6 +29,15 @@
             v-if="artist.ig_username"
             class="mt-1 text-xs sm:text-sm hover:font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-amber-400 hover:to-rose-600 transition duration-300"
             >@{{ artist.ig_username }}</a
+          >
+        </div>
+
+        <div
+          class="bg-black text-white aspect-square flex items-center justify-center p-4 lg:p-6 xl:p-8"
+        >
+          <span
+            class="font-bold tracking-tight text-xl lg:text-4xl !leading-tight"
+            >More artists will be revealed soon!</span
           >
         </div>
       </div>

@@ -7,44 +7,19 @@ export const state = () => ({
     location: 'CIBIS Park Warehouse',
   },
   artists: [{
-      name: 'Anton Wirjono',
-      img: 'anton-wirjono.webp',
+      name: 'Anton & Hogi Wirjono',
+      img: 'anton-and-hogi-wirjono.webp',
       ig_username: 'antonwirjono'
     },
     {
-      name: 'Ballistic Soundsystem',
-      img: 'ballistic-soundsystem.webp',
-      ig_username: 'ballisticsoundsystem'
-    },
-    {
-      name: 'Bobby Suryadi',
-      img: 'bobby-suryadi.webp',
-      ig_username: 'bobbysuryadi'
+      name: 'Batalion',
+      img: 'batalion.webp',
+      ig_username: 'batalionjkt'
     },
     {
       name: 'Ecilo',
       img: 'ecilo.webp',
       ig_username: 'ecilo_official'
-    },
-    {
-      name: 'House Cartel',
-      img: 'house-cartel.webp',
-      ig_username: 'house_cartel'
-    },
-    {
-      name: 'Jonathan Kusuma',
-      img: 'jonathan-kusuma.webp',
-      ig_username: 'ojonkusuma'
-    },
-    {
-      name: 'Marcel Andhika',
-      img: 'marcel.webp',
-      ig_username: 'mclandhika'
-    },
-    {
-      name: 'Sunset People Project',
-      img: 'sunset-people-project.webp',
-      ig_username: 'sunsetpeopleproject'
     },
     {
       name: 'Tantra',

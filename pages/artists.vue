@@ -1,6 +1,6 @@
 <template>
-  <!-- <MeetTheArtists /> -->
-  <div class="min-h-screen flex flex-col items-center justify-center">
+  <MeetTheArtists />
+  <!-- <div class="min-h-screen flex flex-col items-center justify-center">
     <div class="-mt-32 flex items-center gap-6">
       <span
         class="w-10 h-px bg-gradient-to-r from-transparent to-primary-lighten"
@@ -14,8 +14,6 @@
         class="w-10 h-px bg-gradient-to-r from-primary-lighten to-transparent"
       ></span>
     </div>
-
-    <!-- <ComingSoonCircle class="h-24 animate-spin-slow" /> -->
 
     <p class="mt-6">Follow our Instagram so you don't miss the updates.</p>
 
@@ -40,7 +38,7 @@
         <span>invrtfestival</span>
       </div>
     </a>
-  </div>
+  </div> -->
 </template>
 
 <script>
