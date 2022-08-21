@@ -3,7 +3,7 @@ export const state = () => ({
   instagram: 'invrtfestival',
   event: {
     date: 'October 8, 2022',
-    time: '7 PM – 1 AM',
+    time: '7 PM – 3 AM',
     location: 'CIBIS Park Warehouse',
   },
   artists: [{
@@ -25,6 +25,16 @@ export const state = () => ({
       name: 'Tantra',
       img: 'tantra.webp',
       ig_username: 'tantra_official'
+    },
+    {
+      name: 'House Cartel',
+      img: 'house-cartel.webp',
+      ig_username: 'house_cartel'
+    },
+    {
+      name: 'Berguna (SALA)',
+      img: 'berguna.webp',
+      ig_username: 'salaa_______'
     },
   ]
 })
