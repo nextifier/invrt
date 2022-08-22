@@ -140,7 +140,7 @@
                 <div>
                   <span
                     class="text-white font-bold tracking-tight text-xl lg:text-2xl"
-                    >Rp350,000</span
+                    >Rp400,000</span
                   ><span class="text-xs sm:text-sm"> / entry</span>
                 </div>
 
