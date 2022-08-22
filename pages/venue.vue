@@ -39,7 +39,7 @@
         />
 
         <img
-          src="~/assets/img/floorplan/floorplan-2.jpg"
+          src="~/assets/img/floorplan/floorplan-2.webp"
           alt="Floor Plan Outdoor"
           class="w-full materialboxed"
           width="1400"
