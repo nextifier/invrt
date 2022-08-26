@@ -355,6 +355,11 @@ export default {
             link: "https://www.tokopedia.com/events/detail/invrt-music-festival/",
             image: "tokopedia.svg",
           },
+          {
+            name: "DANCESIGNAL",
+            link: "https://pay.dancesignal.com/?id=INVRT",
+            image: "dancesignal.webp",
+          },
         ],
       },
       // swiperOption: {
