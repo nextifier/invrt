@@ -36,6 +36,21 @@ export const state = () => ({
       img: 'berguna.webp',
       ig_username: 'salaa_______'
     },
+    {
+      name: 'Sunset People Project',
+      img: 'sunset-people-project.webp',
+      ig_username: 'sunsetpeopleproject'
+    },
+    {
+      name: 'Marcel',
+      img: 'marcel.webp',
+      ig_username: 'mclandhika'
+    },
+    {
+      name: 'Aditya Permana Ridwan',
+      img: 'aditya-permana-ridwan.webp',
+      ig_username: 'dekadenznow'
+    },
   ]
 })
 
