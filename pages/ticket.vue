@@ -148,7 +148,17 @@
                 </div>
 
                 <div class="flex gap-x-3 items-center justify-between w-full">
-                  <span class="text-white">PRE-SALE 1 (Rp400k)</span>
+                  <span class="text-white line-through decoration-red-500"
+                    >PRE-SALE 1 (Rp400k)</span
+                  >
+                  <span
+                    class="px-3 py-1.5 rounded bg-red-600 text-white text-xs sm:text-sm"
+                    >SOLD OUT</span
+                  >
+                </div>
+
+                <div class="flex gap-x-3 items-center justify-between w-full">
+                  <span class="text-white">PRE-SALE 2 (Rp500k)</span>
                   <span
                     class="px-3 py-1.5 rounded bg-green-600 text-white text-xs sm:text-sm"
                     >AVAILABLE</span
@@ -156,7 +166,7 @@
                 </div>
               </div>
 
-              <div class="flex flex-col items-start mt-10">
+              <!-- <div class="flex flex-col items-start mt-10">
                 <div>
                   <span
                     class="text-white font-bold tracking-tight text-xl lg:text-2xl"
@@ -169,7 +179,7 @@
                   selling phases. Get the ticket now for the best available
                   price.
                 </p>
-              </div>
+              </div> -->
 
               <div v-if="!openSellingTicket" class="mt-10">
                 <span
